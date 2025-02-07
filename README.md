@@ -67,7 +67,7 @@ Voting Management System/
 
 ### For Administrators:
 
-- Log in with admin credentials, Username: Master & Password: Oogway
+- Log in with admin credentials, **Username:** `Master` & **Password:** `Oogway`
 - Manage voter lists and oversee the voting process.
 
 ## Future Enhancements
