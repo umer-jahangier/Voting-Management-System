@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.voter.VoterLogin">
+    <left>
+        <AnchorPane prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: #4b6043;" BorderPane.alignment="CENTER">
+            <children>
+                <Text fill="WHITE" layoutX="70.0" layoutY="201.0" stroke="WHITE" strokeWidth="3.0" textAlignment="CENTER" wrappingWidth="260.0">
+                    <font>
+                        <Font name="Open Sans Semibold" size="52.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" layoutX="169.0" layoutY="269.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                    <font>
+                        <Font name="Open Sans Semibold" size="46.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" layoutX="74.0" layoutY="282.0" stroke="WHITE" strokeWidth="5.0" text="VOTER">
+                    <font>
+                        <Font name="Open Sans Semibold" size="80.0" />
+                    </font>
+                </Text>
+                <Text fill="#f2f2f2" layoutX="103.0" layoutY="343.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SECTION">
+                    <font>
+                        <Font name="Open Sans Semibold" size="46.0" />
+                    </font>
+                </Text>
+            </children>
+        </AnchorPane>
+    </left>
+    <right>
+        <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+            <children>
+                <TextField fx:id="voterUsername" layoutX="125.0" layoutY="279.0" prefHeight="28.0" prefWidth="176.0" promptText="CNIC No." style="-fx-border-color: #511281;">
+                    <font>
+                        <Font name="Open Sans" size="12.0" />
+                    </font>
+                </TextField>
+                <PasswordField fx:id="voterPassword" layoutX="125.0" layoutY="333.0" prefHeight="26.0" prefWidth="174.0" promptText="Password" style="-fx-border-color: #511281;" />
+                <Button id="voter_login" fx:id="voterLoginButton" defaultButton="true" layoutX="172.0" layoutY="408.0" mnemonicParsing="false" onAction="#voterPanelWork" prefHeight="30.0" prefWidth="81.0" stylesheets="@../../stylesheet.css" text="Log In" textFill="WHITE">
+                    <font>
+                        <Font name="Open Sans Semibold" size="14.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+
+                <Text fill="#4b6043" layoutX="162.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Voter Login" textAlignment="CENTER">
+                    <font>
+                        <Font name="Open Sans Semibold" size="20.0" />
+                    </font>
+                </Text>
+                <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="88.0" layoutY="282.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../Resources/User-Icon-PNG.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="21.0" fitWidth="22.0" layoutX="88.0" layoutY="336.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../Resources/61457.png" />
+                    </image>
+                </ImageView>
+            <Label fx:id="voterLabel" layoutX="74.0" layoutY="372.0" prefHeight="27.0" prefWidth="278.0" text=" " textFill="#ff0303" />
+            <ImageView fitHeight="163.0" fitWidth="109.0" layoutX="159.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Resources/nadra-logo-A7CA2E3C68-seeklogo.com.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="171.0" layoutY="459.0" mnemonicParsing="false" onAction="#resultLogout" prefHeight="30.0" prefWidth="83.0" stylesheets="@../../stylesheet.css" text="Main Menu" textFill="WHITE" />
+            </children>
+        </AnchorPane>
+    </right>
+</BorderPane>
